@@ -4,9 +4,12 @@ import time
 
 def main():
     cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+    # deal the first two cards to the user and computer
     player_hand, computer_hand = starting_cards(cards)
     player_hand, computer_hand = convert_aces(player_hand), convert_aces(computer_hand)
+    # display the cards of both the computer and user, but obscure the computer's second card
     display_hands(player_hand, computer_hand)
+    # So lon as the user has not got five cards and has not gone bust, keep asking if they want to hit or stand
     while len(player_hand) != 5:
         if bust(player_hand) or black_jack(player_hand):
             break
