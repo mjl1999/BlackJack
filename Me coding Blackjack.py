@@ -9,7 +9,7 @@ def main():
     player_hand, computer_hand = convert_aces(player_hand), convert_aces(computer_hand)
     # display the cards of both the computer and user, but obscure the computer's second card
     display_hands(player_hand, computer_hand)
-    # So lon as the user has not got five cards and has not gone bust, keep asking if they want to hit or stand
+    # So long as the user has not got five cards and has not gone bust, keep asking if they want to hit or stand
     while len(player_hand) != 5:
         if bust(player_hand) or black_jack(player_hand):
             break
@@ -54,7 +54,7 @@ def main():
         pass
     else:
         has_user_won(player_hand, computer_hand)
-
+    # ask the user if they wish to play again
     if play_again():
         main()
 
