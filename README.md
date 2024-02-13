@@ -1,5 +1,5 @@
 # BlackJack
-My attempt at coding blackjack in python
+My attempt python blackjack program.
 I very much have a love-hate relationship with this one!!!
 
 Positives first.
